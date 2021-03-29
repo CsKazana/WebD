@@ -28,4 +28,3 @@ This website has also a best deal page which has many tech-related best deals li
 ### [LicenseMIT](https://github.com/CsKazana/WebD/blob/cskhazana/LICENSE) © 2021
 
 <br />
-![visitors](https://visitor-badge.laobi.icu/badge?page_id=Ankesh054-official.WebD)

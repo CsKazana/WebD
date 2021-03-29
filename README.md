@@ -1,4 +1,4 @@
-## CSKHAZANA
+### CSKHAZANA
 A website for tech-related problem's solution, Followed by tutorial videos.
 This website has also a best deal page which has many tech-related best deals like: Mobile devices, Computer's Components, etc.
 <br>
@@ -14,7 +14,7 @@ This website has also a best deal page which has many tech-related best deals li
 <br>
 <br>
 
-## Screenshots
+### WEBDESIGNS FOR WEBPAGES:
 <p align="center">
 <img src="src/Design-of-webpage/CSKHAZANAHOME.png" height = "480" width="270">  <img src="src/Design-of-webpage/CSKHAZANAHOWTO.png" height = "480" width="270">
 </p>
@@ -25,7 +25,6 @@ This website has also a best deal page which has many tech-related best deals li
 <br>
 <br>
 
-## LicenseMIT © [Ankesh054-official](https://github.com/Ankesh054-official)
+### [LicenseMIT](https://github.com/CsKazana/WebD/blob/cskhazana/LICENSE) © 2021
 
 <br />
-![visitors](https://visitor-badge.laobi.icu/badge?page_id=Ankesh054-official.WebD)

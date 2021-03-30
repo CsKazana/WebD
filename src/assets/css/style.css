@@ -1,0 +1,203 @@
+/* DESIGNED & DEELOPED BY: CSKHAZANA */
+
+/* Importing font Playfair */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+/* initilizing margin padding and border-box */
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* aligned text at center and defined color */
+
+header h1 {
+    text-align: center;
+    color: #293845;
+}
+
+/* defined color for background and some padding */
+
+header {
+    background-color: #8dd7cf;
+    padding: 50px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 3px;
+    margin: 2px 23px;
+}
+
+nav a:hover {
+    font-size: 15px;
+    color: #80b8b2;
+}
+
+nav input {
+    margin-left: 0px;
+    border: 1px solid #c3cfd9;
+    border-left: none;
+}
+
+nav input[type="search"] {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+nav input[type="submit"] {
+    height: 23px;
+    width: 23px;
+    margin-right: -5px;
+    border-right: none;
+    background-color: #ffffff;
+    background-image: url("../icons/search.svg");
+    background-repeat: no-repeat;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.flex-container {
+    border-top: 1px solid #788896;
+    border-bottom: 1px solid #788896;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: #c3cfd9;
+    padding: 10px;
+}
+
+/* .flex-item {
+    width: 75px;
+    height: 75px;
+    border: 2px solid #c3cfd9;
+    text-align: center;
+    font-size: 2em;
+} */
+
+#flex-items5 {
+    border: 1px solid #adbbc6;
+    margin-left: 560px;
+}
+
+@media screen and (min-width: 791px) {
+    #flex-items0 {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 1340px) and (min-width: 1181px) {
+    #flex-items5 {
+        margin-left: 400px;
+    }
+}
+
+@media screen and (max-width: 1180px) and (min-width: 1164px) {
+    #flex-items5 {
+        margin-left: 300px;
+    }
+}
+
+@media screen and (max-width:1164px) and (min-width:1011px) {
+    #flex-items5 {
+        margin-left: 230px;
+    }
+}
+
+@media screen and (max-width: 1011px) and (min-width: 996px) {
+    #flex-items5 {
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width:995px) and (min-width:787px) {
+    #flex-items5 {
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width:790px) and (min-width:50px) {
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        float: left;
+        background-color: #8dd7d000;
+        border: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    #flex-items5 {
+        margin-left: 5px;
+    }
+    #flex-items0 {
+        width: 32px;
+        height: 32px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    #flex-items0 input[type="checkbox"] {
+        width: 33px;
+        height: 33px;
+        border: 0px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+
+footer .social {
+    border-top: 1px solid #788896;
+    border-bottom: 1px solid #788896;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: #c3cfd9;
+    padding: 10px;
+}
+
+footer .social .instagram{
+    background-image: url("../icons/facebook.svg");
+}
+footer .social .twitter{
+    background-image: url("../icons/facebook.svg");
+}
+footer .social .facebook{
+    background-image: url("../icons/facebook.svg");
+}
+footer .social .{
+    background-image: url("../icons/facebook.svg");
+}
+footer .social .instagram{
+    background-image: url("../icons/facebook.svg");
+}
+footer a {
+    color: black;
+    text-decoration: none;
+    padding: 3px;
+    margin: 2px 23px;
+}
+
+footer a:hover {
+    font-size: 15px;
+    color: #80b8b2;
+}
+
+footer .flex-container {
+    padding-top: 103px;
+}
+
+footer .copyright {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    margin-left: 560px;
+    margin-bottom: 10px;
+    font-size: 10px;
+}

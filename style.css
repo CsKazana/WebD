@@ -1,0 +1,121 @@
+section{
+     padding-left: 3%;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.button {
+    margin-top: 260px;
+    display: inline-block;
+    padding: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color:#46a6cc ;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .button:hover {background-color: #46a6cc}
+  
+  .button:active {
+    background-color: #46a6cc;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+main{
+    padding-left: 3%;
+    display: flex;
+    flex-direction: row;
+}
+.row{
+    width: 25%;
+   
+}
+h1{
+    border: 1px;
+    background-color: slategrey;
+    border-bottom:5px solid red;
+    font-style: bold;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+    
+a.one:link {color: blue; }
+a.one:visited {color: rgb(0, 0, 0);}
+a.one:hover{color:red; font-size:120%;}
+
+a.two:link {color: blue; }
+a.two:visited {color: rgb(0, 0, 0);}
+a.two:hover{color: red; font-size:120%;}
+
+a.three:link {color: blue;}
+a.three:visited {color: rgb(0, 0, 0);}
+a.three:hover{color: red; font-size:120%;}
+
+a.four:link {color:blue; }
+a.four:visited {color: rgb(0, 0, 0);}
+a.four:hover{color:red; font-size:120%;}
+
+a.five:link {color: blue; }
+a.five:visited {color: rgb(0, 0, 0);}
+a.five:hover {font-size: 120%;
+    color:red;
+}
+
+a.six:link {color: blue; }
+a.six:visited {color: rgb(0, 0, 0);}
+a.six:hover{color:red; font-size:120%;}
+
+a.seven:link {color: blue; }
+a.seven:visited {color: rgb(0, 0, 0);}
+a.seven:hover{color:red; font-size:120%;}
+
+a.eight:link {color: blue; }
+a.eight:visited {color: rgb(0, 0, 0);}
+a.eight:hover{color:red; font-size:120%;}
+
+a.nine:link {color: blue; }
+a.nine:visited {color: rgb(0, 0, 0);}
+a.nine:hover{color:red; font-size:120%;}
+
+a.ten:link {color: blue; }
+a.ten:visited {color: rgb(0, 0, 0);}
+a.ten:hover{color:red; font-size:120%;}
+
+a.eleven:link {color: blue; }
+a.eleven:visited {color: rgb(0, 0, 0);}
+a.eleven:hover{color:red; font-size:120%;}
+
+a.twelve:link {color: blue; }
+a.twelve:visited {color: rgb(0, 0, 0);}
+a.twelve:hover{color:red; font-size:120%;}
+
+a.thirteen:link {color: blue; }
+a.thirteen:visited {color: rgb(0, 0, 0);}
+a.thirteen:hover{color:red; font-size:120%;}
+
+a.fourteen:link {color: blue; }
+a.fourteen:visited {color: rgb(0, 0, 0);}
+a.fourteen:hover{color:red; font-size:120%;}
+
+a.fifteen:link {color: blue; }
+a.fifteen:visited {color: rgb(0, 0, 0);}
+a.fifteen:hover{color:red; font-size:120%;}
+
+a.sixteen:link {color: blue; }
+a.sixteen:visited {color: rgb(0, 0, 0);}
+a.sixteen:hover{color:red; font-size:120%;}
+    
+ 
+  
+ 
+

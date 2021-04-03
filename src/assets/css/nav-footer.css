@@ -1,0 +1,281 @@
+/* DESIGNED & DEELOPED BY: CSKHAZANA */
+
+/* Importing font Playfair */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+/* initilizing margin padding and border-box */
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* aligned text at center and defined color */
+
+header h1 {
+    text-align: center;
+    color: #293845;
+}
+
+/* defined color for background and some padding */
+
+header {
+    background-color: #8dd7cf;
+    padding: 50px;
+}
+
+/* defining some properties anchor tags in navigation bar */
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 3px;
+    margin: 2px 23px;
+}
+
+/* defining some properties on hover state of anchor tags of navigation bar  */
+
+nav a:hover {
+    font-size: 15px;
+    color: #80b8b2;
+}
+
+/* Setting left margin to 0px and left border none with other border 1px width solid instyle and color #c3cfd9 */
+
+nav input {
+    margin-left: 0px;
+    border: 1px solid #c3cfd9;
+    border-left: none;
+}
+
+/* making border curve 4px b'coz! other borders must match with input type submit to make a perfect search bar.  */
+
+nav input[type="search"] {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+/* defining height and width 23px for making it match with input type search. With margin -5px removing space b/w both input some color right border none background color, a search image icon with no-repeat and other lft border curvs */
+
+nav input[type="submit"] {
+    height: 23px;
+    width: 23px;
+    margin-right: -5px;
+    border-right: none;
+    background-color: #ffffff;
+    background-image: url("../icons/social/search.svg");
+    background-repeat: no-repeat;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+/* making it flex to reduce complexity of some states */
+
+.flex-container {
+    border-top: 1px solid #788896;
+    border-bottom: 1px solid #788896;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: #c3cfd9;
+    padding: 10px;
+}
+
+/* defining border some color and left margin to align that specific div at left of navigation bar.  */
+
+#flex-items5 {
+    border: 1px solid #adbbc6;
+    margin-left: 560px;
+}
+
+/* All css codes which starts with @media, Those code are only for maintaining theresponsiveness of website on diffrent devices having diffrent width of screen.  */
+
+@media screen and (min-width: 791px) {
+    #flex-items0 {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 1340px) and (min-width: 1181px) {
+    #flex-items5 {
+        margin-left: 400px;
+    }
+}
+
+@media screen and (max-width: 1180px) and (min-width: 1164px) {
+    #flex-items5 {
+        margin-left: 300px;
+    }
+}
+
+@media screen and (max-width:1164px) and (min-width:1011px) {
+    #flex-items5 {
+        margin-left: 230px;
+    }
+}
+
+@media screen and (max-width: 1011px) and (min-width: 996px) {
+    #flex-items5 {
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width:995px) and (min-width:787px) {
+    #flex-items5 {
+        margin-left: 5px;
+    }
+}
+
+/* making it hamburger menu at specific screen width.  */
+
+@media screen and (max-width:790px) and (min-width:50px) {
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        float: left;
+        background-color: #8dd7d000;
+        border: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    #flex-items5 {
+        margin-left: 5px;
+    }
+    #flex-items0 {
+        width: 32px;
+        height: 32px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    #flex-items0 input[type="checkbox"] {
+        width: 33px;
+        height: 33px;
+        border: 0px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+
+footer .flex-container0 {
+    border-top: 1px solid #788896;
+    border-bottom: 1px solid #788896;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: #c3cfd9;
+    padding: 10px;
+    padding-top: 100px;
+}
+
+/* making it flex to reduce complexity of social section and specific stages */
+
+footer .social {
+    border-top: 1px solid #788896;
+    border-bottom: 1px solid #788896;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: #c3cfd9;
+    padding: 10px;
+}
+
+/* maintaining a safe distance b/w icon.  */
+
+footer .social .social-icon {
+    margin-left: 40px;
+}
+
+/* setting image for instagram  */
+
+footer .social #instagram {
+    width: 33px;
+    height: 33px;
+    background-repeat: no-repeat;
+    background-image: url("../icons/social/instagram.svg");
+}
+
+/* For twitter  */
+
+footer .social #twitter {
+    width: 33px;
+    height: 33px;
+    background-repeat: no-repeat;
+    background-image: url("../icons/social/twitter.svg");
+}
+
+/* For facebook  */
+
+footer .social #facebook {
+    width: 33px;
+    height: 33px;
+    background-repeat: no-repeat;
+    background-image: url("../icons/social/facebook.svg");
+}
+
+/* For linkdin  */
+
+footer .social #linkdin {
+    width: 33px;
+    height: 33px;
+    background-repeat: no-repeat;
+    background-image: url("../icons/social/linkedin.svg");
+}
+
+/* For mail  */
+
+footer .social #mail {
+    width: 33px;
+    height: 33px;
+    background-repeat: no-repeat;
+    background-image: url("../icons/social/mail.svg");
+}
+
+/* defining some properties anchor tags in footer */
+
+footer a {
+    color: black;
+    text-decoration: none;
+    padding: 3px;
+    margin: 2px 23px;
+}
+
+/* defining some properties on hover state of anchor tags of navigation bar  */
+
+footer a:hover {
+    font-size: 15px;
+    color: #80b8b2;
+}
+
+/* adding some padding at the top of copyright area.  */
+
+footer .flex-container {
+    padding-top: 103px;
+}
+
+/* adding some bottom margin and align at right */
+
+footer .flex-container0 .copyright {
+    margin-left: 500px;
+    margin-bottom: 10px;
+    font-size: 10px;
+}
+
+/* making it hamburger menu at specific screen width.  */
+
+@media screen and (max-width:1309px) and (min-width:1158px) {
+    footer .flex-container0 .copyright {
+        margin-left: 350px;
+    }
+}
+
+@media screen and (max-width:978px) and (min-width:50px) {
+    footer .flex-container0 .copyright {
+        padding-top: 10px;
+        margin-left: 60px;
+    }
+}

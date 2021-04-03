@@ -1,0 +1,102 @@
+/* DESIGNED & DEELOPED BY: CSKHAZANA */
+
+/* Importing font Playfair */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+/* initilizing margin padding and border-box for parent*/
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+main section h2 {
+    text-align: center;
+}
+
+main section .popular-post .img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-left: 3px;
+    background-color: #dfe6ed;
+    width: 212px;
+    height: 212px;
+}
+
+main section .popular-post .post-tile .block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 323px;
+}
+
+main section .popular-post .frm {
+    width: 70%;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(2, 35%);
+    grid-template-rows: repeat(2, 50%);
+}
+
+main section .popular-post .post-tile {
+    width: 560px;
+    border: 1px solid #c3cfd9;
+    padding: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 10px;
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+main section .popular-post .post-tile #post02 {
+    /* grid-column-start: 2;
+    grid-column-end: 3; */
+    grid-row-start: 1;
+    grid-row-end: 2;
+    align-self: center;
+}
+
+main section .popular-post {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+main section .popular-post .instaframe h3 {
+    text-align: center;
+    color: #45bdb1;
+}
+
+main section .popular-post .instaframe {
+    border: 1px solid #c3cfd9;
+}
+
+main section .popular-post .instaframe #instainner {
+    border: 1px solid #c3cfd9;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 11px;
+}
+
+main section .popular-post .instaframe div p {
+    width: 350px;
+}
+
+main section .popular-post .instaframe {
+    margin-top: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #c3cfd9;
+    align-self: flex-end;
+}

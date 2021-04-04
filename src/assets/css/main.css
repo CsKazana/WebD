@@ -20,12 +20,12 @@ body {
     margin: 20px 10px;
     display: grid;
     background-color: #ffffff;
-    grid-template-columns: 6fr 4fr;
+    grid-template-columns: 6fr 2fr;
 }
 
 /* some rule for popular-post section  */
 
-.popular-post {
+#top .popular-post {
     margin: 10px 30px;
     height: 600px;
     grid-column-start: 1;
@@ -51,7 +51,7 @@ body {
 
 /* aligned post-1 */
 
-.popular-post #post-1 {
+#top .popular-post #post-1 {
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 1;
@@ -60,7 +60,7 @@ body {
 
 /* aligned post-2 */
 
-.popular-post #post-2 {
+#top .popular-post #post-2 {
     grid-row-start: 3;
     grid-row-end: 4;
     grid-column-start: 2;
@@ -69,7 +69,7 @@ body {
 
 /* aligned more button in popular-post section  */
 
-.popular-post .mr-popular-post {
+#top .popular-post .mr-popular-post {
     text-align: center;
     grid-row-start: 4;
     grid-row-end: 5;
@@ -77,28 +77,52 @@ body {
     grid-column-end: 3;
 }
 
+/* rules for anchor */
+
+#top .popular-post .mr-popular-post a {
+    text-decoration: none;
+    color: #ffff;
+    padding: 5px;
+    background-color: #788896;
+    border: none;
+    border-radius: 3px;
+}
+
+/* rules for anchor tag at hover state */
+
+#top .popular-post .mr-popular-post a:hover {
+    background-color: #8dd7cf;
+}
+
 /* some rules for both posts  */
 
-.popular-post .posts {
+#top .popular-post .posts {
     background-color: #ffffff;
     border: 2px solid #c3cfd9;
     display: grid;
-    grid-template-columns: 1.94fr 1.56fr;
+    grid-template-columns: 1.74fr 2.9fr;
     column-gap: 5px;
     row-gap: 5px;
 }
 
 /* some rules for images in posts  */
 
-.popular-post .posts .img {
+#top .popular-post .posts .img {
+    text-align: center;
     background-color: #dfe6ed;
     grid-column-start: 1;
     grid-column-end: 2;
 }
 
+/* remove it when you add a real image  */
+
+#top .popular-post .posts .img img {
+    margin-top: 80px;
+}
+
 /* some rules for paragraph in posts section  */
 
-.popular-post .posts .para {
+#top .popular-post .posts .para {
     margin-top: 26px;
     background-color: #ffffff;
     grid-column-start: 2;
@@ -107,8 +131,192 @@ body {
 
 /* rules for instagram section  */
 
-.instagram {
-    background-color: rgb(255, 140, 140);
+#top .instagram {
     grid-column-start: 2;
     grid-column-end: 3;
+    background-color: #ffffff;
+    border: 2px solid #c3cfd9;
+}
+
+/* some rules for h2 of instagram div  */
+
+#top .instagram h2 {
+    color: #8dd7cf;
+    font-size: medium;
+    text-align: center;
+}
+
+/* some rules for inner frame of instagram  */
+
+#top .instagram .instainner {
+    height: 556px;
+    border: 2px solid #c3cfd9;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* rules for first horizontal rule */
+
+#first {
+    color: #c3cfd9;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+#middle {
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: 5% 2%;
+}
+
+/* some rule for popular-post section  */
+
+#middle .recent-post {
+    border: 2px solid #c3cfd9;
+    padding: 10px;
+    margin: 10px 30px;
+    height: 216px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    column-gap: 5px;
+    grid-auto-columns: minmax(50px, 65px);
+}
+
+/* some rule for h2 in popular post section  */
+
+#middle h2 {
+    text-align: center;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+/* aligned post-3 */
+
+#middle .recent-post #post-3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+/* aligned post-4 */
+
+#middle .recent-post #post-4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+/* aligned post-5 */
+
+#middle .recent-post #post-5 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+/* some rules for both posts  */
+
+#middle .recent-post .posts {
+    height: 165px;
+    background-color: #ffffff;
+    border: 2px solid #c3cfd9;
+    display: grid;
+    grid-template-columns: 1.74fr 2.9fr;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+/* some rules for images in posts  */
+
+#middle .recent-post .posts .img {
+    text-align: center;
+    background-color: #dfe6ed;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+/* remove it when you add a real image  */
+
+#middle .recent-post .posts .img img {
+    margin-top: 80px;
+}
+
+/* some rules for paragraph in posts section  */
+
+#middle .recent-post .posts .para {
+    margin-top: 26px;
+    background-color: #ffffff;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#last {
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: 5% 2%;
+}
+
+
+/* some rule for popular-post section  */
+
+#last .recent-videos {
+    border: 2px solid #c3cfd9;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 120px;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 300px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    column-gap: 5px;
+    grid-auto-columns: minmax(50px, 65px);
+}
+
+/* some rule for h2 in popular post section  */
+
+#last h2 {
+    text-align: center;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+/* aligned post-3 */
+
+#last .recent-videos #post-3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+/* aligned post-4 */
+
+#last .recent-videos #post-4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+/* aligned post-5 */
+
+#last .recent-videos #post-5 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+/* some rules for both posts  */
+
+#last .recent-videos .posts {
+    height: 250px;
+    background-color: #dfe6ed;
+    border: 2px solid #c3cfd9;
+    display: grid;
+    grid-template-columns: 1.74fr 2.9fr;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+
+#last .recent-videos .posts img{
+     margin-top: 109px;
+     margin-left: 190px;
 }

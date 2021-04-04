@@ -14,89 +14,101 @@ body {
     padding: 0px;
 }
 
-main section h2 {
-    text-align: center;
-}
+/* rules for topmost section  */
 
-main section .popular-post .img {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    margin-left: 3px;
-    background-color: #dfe6ed;
-    width: 212px;
-    height: 212px;
-}
-
-main section .popular-post .post-tile .block {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    width: 323px;
-}
-
-main section .popular-post .frm {
-    width: 70%;
-    background-color: #ffffff;
+#top {
+    margin: 20px 10px;
     display: grid;
-    grid-template-columns: repeat(2, 35%);
-    grid-template-rows: repeat(2, 50%);
+    background-color: #ffffff;
+    grid-template-columns: 6fr 4fr;
 }
 
-main section .popular-post .post-tile {
-    width: 560px;
-    border: 1px solid #c3cfd9;
-    padding: 10px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-right: 10px;
-    margin-left: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
+/* some rule for popular-post section  */
+
+.popular-post {
+    margin: 10px 30px;
+    height: 600px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr 2.5fr;
+    grid-template-rows: 7% repeat(2, 30%) 5%;
+    column-gap: 5px;
+    row-gap: 20px;
+    grid-auto-rows: minmax(50px, 75px);
+    grid-auto-columns: minmax(50px, 75px);
 }
 
-main section .popular-post .post-tile #post02 {
-    /* grid-column-start: 2;
-    grid-column-end: 3; */
+/* some rule for h2 in popular post section  */
+
+#top .popular-post h2 {
+    text-align: center;
     grid-row-start: 1;
     grid-row-end: 2;
-    align-self: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 
-main section .popular-post {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+/* aligned post-1 */
+
+.popular-post #post-1 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
-main section .popular-post .instaframe h3 {
+/* aligned post-2 */
+
+.popular-post #post-2 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+/* aligned more button in popular-post section  */
+
+.popular-post .mr-popular-post {
     text-align: center;
-    color: #45bdb1;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 
-main section .popular-post .instaframe {
-    border: 1px solid #c3cfd9;
+/* some rules for both posts  */
+
+.popular-post .posts {
+    background-color: #ffffff;
+    border: 2px solid #c3cfd9;
+    display: grid;
+    grid-template-columns: 1.94fr 1.56fr;
+    column-gap: 5px;
+    row-gap: 5px;
 }
 
-main section .popular-post .instaframe #instainner {
-    border: 1px solid #c3cfd9;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 11px;
+/* some rules for images in posts  */
+
+.popular-post .posts .img {
+    background-color: #dfe6ed;
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
 
-main section .popular-post .instaframe div p {
-    width: 350px;
+/* some rules for paragraph in posts section  */
+
+.popular-post .posts .para {
+    margin-top: 26px;
+    background-color: #ffffff;
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 
-main section .popular-post .instaframe {
-    margin-top: auto;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    border: 1px solid #c3cfd9;
-    align-self: flex-end;
+/* rules for instagram section  */
+
+.instagram {
+    background-color: rgb(255, 140, 140);
+    grid-column-start: 2;
+    grid-column-end: 3;
 }

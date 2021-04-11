@@ -27,18 +27,19 @@
     <nav class="flex-container">
         <div class="flex-items" id="flex-items0">
             <input type="checkbox" name="toggler" id="toggler">
+            <div class="hamburger"><div></div></div>
         </div>
         <div class="flex-items" id="flex-items1">
             <a href="#header">HOME</a>
         </div>
         <div class="flex-items" id="flex-items2">
-            <a href="#">HOW TO</a>
+            <a href="src/assets/pages/HOW_TO.html">HOW TO</a>
         </div>
         <div class="flex-items" id="flex-items3">
-            <a href="#">VIDEOS</a>
+            <a href="src/assets/pages/Videos.html">VIDEOS</a>
         </div>
         <div class="flex-items" id="flex-items4">
-            <a href="#">BEST DEALS</a>
+            <a href="src/assets/pages/BEST_DEALS.html">BEST DEALS</a>
         </div>
         <div class="flex-items" id="flex-items5">
             <input type="submit" value="">
@@ -77,55 +78,65 @@
             </div>
         </section>
         <hr id="first">
-        <section id="middle">
+        <section class="recent_post_top_frame">
             <h2>RECENT POST</h2>
             <div class="recent-post">
-                <div class="posts" id="post-3">
-                    <div class="img"><img src="src/assets/images/photo_size_select_actual_black_24dp.svg" alt=""></div>
-                    <div class="para">1Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex ipsum minus, impedit
-                        dolorem tempore exercitationem Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-                </div>
-                <div class="posts" id="post-4">
-                    <div class="img"><img src="src/assets/images/photo_size_select_actual_black_24dp.svg" alt=""></div>
-                    <div class="para">1Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex ipsum minus, impedit
-                        dolorem tempore exercitationem Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-                </div>
-                <div class="posts" id="post-5">
-                    <div class="img"><img src="src/assets/images/photo_size_select_actual_black_24dp.svg" alt=""></div>
-                    <div class="para">1Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex ipsum minus, impedit
-                        dolorem tempore exercitationem Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-                </div>
-            </div>
-        </section>
-        <section id="last">
-            <h2>RECENT VIDEOS</h2>
-            <div class="recent-videos main-carousel">
-                <div class="posts carousel-cell" id="post-3">
-                    <img src="src/assets/images/play_circle_filled_black_24dp.svg" alt="">
-                </div>
-                <div class="posts carousel-cell" id="post-4">
-                    <img src="src/assets/images/play_circle_filled_black_24dp.svg" alt="">
-                </div>
-                <div class="posts carousel-cell" id="post-5">
-                    <img src="src/assets/images/play_circle_filled_black_24dp.svg" alt="">
-                </div>
-            </div>
-        </section>
+              <div class="posts" id="post-3">
+                  <div class="img"><img src="src/assets/images/photo_size_select_actual_black_24dp.svg" alt=""></div>
+                  <div class="para">1Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex ipsum minus, impedit
+                      dolorem tempore exercitationem Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+              </div>
+              <div class="posts" id="post-4">
+                  <div class="img"><img src="src/assets/images/photo_size_select_actual_black_24dp.svg" alt=""></div>
+                  <div class="para">1Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex ipsum minus, impedit
+                      dolorem tempore exercitationem Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+              </div>
+              <div class="posts" id="post-5">
+                  <div class="img"><img src="src/assets/images/photo_size_select_actual_black_24dp.svg" alt=""></div>
+                  <div class="para">1Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex ipsum minus, impedit
+                      dolorem tempore exercitationem Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+              </div>
+              <div class="slide_indicator">
+                <p id="dot1"></p>
+                <p id="dot2"></p>
+                <p id="dot3"></p>
+              </div>
+            </section>
+            <section class="recent_post_top_frame">
+                <h2>RECENT VIDEOS</h2>
+              <div class="recent-videos">
+                  <div class="posts" id="post-3">
+                      <img src="src/assets/images/play_circle_filled_black_24dp.svg" alt="">
+                  </div>
+                  <div class="posts" id="post-4">
+                      <img src="src/assets/images/play_circle_filled_black_24dp.svg" alt="">
+                  </div>
+                  <div class="posts" id="post-5">
+                      <img src="src/assets/images/play_circle_filled_black_24dp.svg" alt="">
+                  </div>
+                  <div class="slide_indicator">
+                    <p id="dot1"></p>
+                    <p id="dot2"></p>
+                    <p id="dot3"></p>
+                  </div>
+              </div>    
+          </section>
     </main>
     <!-- footer  -->
     <footer>
         <div class="social">
-            <div class="social-icon" id="instagram"></div>
-            <div class="social-icon" id="twitter"></div>
-            <div class="social-icon" id="facebook"></div>
-            <div class="social-icon" id="linkdin"></div>
-            <div class="social-icon" id="mail"></div>
+            <a href="https://www.instagram.com/cskhazana/" target="_blank" class="social-icon" id="instagram"></a>
+            <a href="https://twitter.com/cskhazana" target="_blank" class="social-icon" id="twitter"></a>
+            <a href="" class="social-icon" id="facebook"></a>
+            <a href="https://github.com/CsKazana/" target="_blank" class="social-icon" id="github"></a>
+            <!-- <a href="https://www.linkedin.com/in/imajydv/" class="social-icon" id="linkdin"></a> -->
+            <a href="mailto:khazanacs@gmail.com" target="_blank" class="social-icon" id="mail"></a>
         </div>
         <div class="flex-container0">
-            <div class="flex-item"><a href="#">ABOUT</a></div>
-            <div class="flex-item"><a href="#">CONTACT</a></div>
-            <div class="flex-item"><a href="#">PRIVACY N POLICY</a></div>
-            <div class="flex-item"><a href="#">FAQ</a></div>
+            <div class="flex-item"><a href="src/assets/pages/about.html">ABOUT</a></div>
+            <div class="flex-item"><a href="src/assets/pages/contact.html">CONTACT</a></div>
+            <div class="flex-item"><a href="src/assets/pages/pnp.html">PRIVACY N POLICY</a></div>
+            <div class="flex-item"><a href="src/assets/pages/faq.html">FAQ</a></div>
             <div class="copyright">&copy;DESIGNED & DEVELOPED BY CSKHAZANA</div>
         </div>
     </footer>

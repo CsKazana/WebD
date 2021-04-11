@@ -145,6 +145,55 @@ nav input[type="submit"] {
         left: 0;
         z-index: 1;
     }
+    .flex-container #toggler {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        opacity: 0;
+    }
+    .flex-container .hamburger {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        height: 60px;
+        width: 60px;
+        padding: 1rem;
+        background-color: #8dd7cf;
+    }
+    /* hamburger lines */
+    .flex-container .hamburger>div {
+        position: relative;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* top and bottom lines  */
+    .flex-container .hamburger>div::before,
+    .flex-container .hamburger>div::after{
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: -10px;
+        width: 100%;
+        height: 2px;
+        background-color: inherit;
+    }
+    /* moves a line to the bottom  */
+    .flex-container .hamburger>div::after{
+        top: 10px;
+    }
+    /* toggler animation  */
+    .flex-container #toggler:checked + .hamb{
+
+    }
     #flex-items5 {
         margin-left: 5px;
     }
@@ -156,8 +205,11 @@ nav input[type="submit"] {
     #flex-items0 input[type="checkbox"] {
         width: 33px;
         height: 33px;
-        border: 0px;
-        background-color: rgba(0, 0, 0, 0);
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        z-index: 2;
     }
 }
 
@@ -217,6 +269,15 @@ footer .social #facebook {
     background-image: url("../icons/social/facebook.svg");
 }
 
+/* For github */
+
+footer .social #github {
+    width: 33px;
+    height: 33px;
+    background-repeat: no-repeat;
+    background-image: url("../icons/social/github.svg");
+}
+
 /* For linkdin  */
 
 footer .social #linkdin {
@@ -235,7 +296,7 @@ footer .social #mail {
     background-image: url("../icons/social/mail.svg");
 }
 
-/* defining some properties anchor tags in footer */
+/* defining some properties on anchor tags in footer */
 
 footer a {
     color: black;
@@ -264,8 +325,6 @@ footer .flex-container0 .copyright {
     margin-bottom: 10px;
     font-size: 10px;
 }
-
-/* making it hamburger menu at specific screen width.  */
 
 @media screen and (max-width:1309px) and (min-width:1158px) {
     footer .flex-container0 .copyright {

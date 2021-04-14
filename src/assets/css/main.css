@@ -359,3 +359,27 @@ main{
      margin-top: 75px;
      margin-left: 171px;
 }
+input[type="button"] {
+    z-index: 1;
+    background-color: #ffffff00;
+    border: none;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    margin-top: 63px;
+    padding: 34px 0px;
+}
+
+input[type="button"]:hover {
+    background-color: #d3d5d893;
+    border-radius: 5px;
+}
+
+.arrows {
+    position: absolute;
+    margin-top: 85px;
+}
+
+#rightbtn, #arrows_right {
+    margin-left: 1246px;
+}

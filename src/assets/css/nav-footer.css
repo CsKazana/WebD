@@ -67,7 +67,7 @@ nav input[type="submit"] {
     margin-right: -5px;
     border-right: none;
     background-color: #ffffff;
-    background-image: url("../icons/social/search.svg");
+    background-image: url("../icons/utility/search.svg");
     background-repeat: no-repeat;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -143,6 +143,9 @@ nav input[type="submit"] {
         top: 0;
         left: 0;
         z-index: 1;
+    }
+    .flex-container #flex-items5{
+        margin-top: 56px;
     }
     .flex-container #flex-items1, .flex-container #flex-items2, .flex-container #flex-items3, .flex-container #flex-items4 {
         margin-left: 35px;

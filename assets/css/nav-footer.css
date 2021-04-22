@@ -1,0 +1,670 @@
+/* DESIGNED & DEELOPED BY: CSKHAZANA */
+
+/* Importing font Playfair */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+/* initilizing margin padding and border-box */
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* aligned text at center and defined color */
+
+header h1 {
+    text-align: center;
+    color: #293845;
+}
+
+/* defined color for background and some padding */
+
+header {
+    background-color: #8dd7cf;
+    padding: 50px;
+}
+
+/* defining some properties anchor tags in navigation bar */
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 3px;
+    margin: 2px 23px;
+}
+
+/* defining some properties on hover state of anchor tags of navigation bar  */
+
+nav a:hover {
+    font-size: 15px;
+    color: #80b8b2;
+}
+
+/* Setting left margin to 0px and left border none with other border 1px width solid instyle and color #c3cfd9 */
+
+nav input {
+    margin-left: 0px;
+    border: 1px solid #c3cfd9;
+    border-left: none;
+}
+
+/* making border curve 4px b'coz! other borders must match with input type submit to make a perfect search bar.  */
+
+nav input[type="search"] {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+/* defining height and width 23px for making it match with input type search. With margin -5px removing space b/w both input some color right border none background color, a search image icon with no-repeat and other lft border curvs */
+
+nav input[type="submit"] {
+    height: 23px;
+    width: 23px;
+    margin-right: -5px;
+    border-right: none;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+/* making it flex to reduce complexity of some states */
+
+.flex-container {
+    border-top: 1px solid #788896;
+    border-bottom: 1px solid #788896;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: #c3cfd9;
+    padding: 10px;
+}
+
+/* defining border some color and left margin to align that specific div at left of navigation bar.  */
+
+#flex-items5 {
+    border: 1px solid #adbbc6;
+    margin-left: 560px;
+}
+
+/* All css codes which starts with @media, Those code are only for maintaining theresponsiveness of website on diffrent devices having diffrent width of screen.  */
+
+@media screen and (min-width: 791px) {
+    #toggler {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 1340px) and (min-width: 1181px) {
+    #flex-items5 {
+        margin-left: 400px;
+    }
+}
+
+@media screen and (max-width: 1180px) and (min-width: 1164px) {
+    #flex-items5 {
+        margin-left: 300px;
+    }
+}
+
+@media screen and (max-width:1164px) and (min-width:1011px) {
+    #flex-items5 {
+        margin-left: 230px;
+    }
+}
+
+@media screen and (max-width: 1011px) and (min-width: 996px) {
+    #flex-items5 {
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width:995px) and (min-width:787px) {
+    #flex-items5 {
+        margin-left: 5px;
+    }
+}
+
+/* making it hamburger menu at specific screen width.  */
+@media screen and (max-width:790px) and (min-width:50px) {
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        float: left;
+        background-color: #8dd7d000;
+        border: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    .flex-container #flex-items5{
+        margin-top: 56px;
+    }
+    .flex-container #flex-items1, .flex-container #flex-items2, .flex-container #flex-items3, .flex-container #flex-items4 {
+        margin-left: 35px;
+        opacity: 0;
+    }
+   
+    .flex-container #toggler {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        opacity: 0;
+    }
+    .flex-container .hamburger {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        height: 60px;
+        width: 60px;
+        padding: 16px;
+        margin-top: 3px;
+        background-color: #8dd7cf;
+    }
+    /* hamburger lines */
+    .flex-container .hamburger>div {
+        position: relative;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* top and bottom lines  */
+    .flex-container .hamburger>div::before, .flex-container .hamburger>div::after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: -10px;
+        width: 100%;
+        height: 2px;
+        background-color: inherit;
+    }
+    /* moves a line to the bottom  */
+    .flex-container .hamburger>div::after {
+        top: 10px;
+    }
+    .flex-container #toggler:checked+ .flex-container .flex-items{
+        opacity: 1;
+    }
+    /* toggler animation  */
+    .flex-container #toggler:checked+.hamburger>div {
+        transform: rotate(135deg);
+    }
+    /* Turn line into X */
+    .flex-container #toggler:checked+.hamburger>div::before, .flex-container #toggler:checked+.hamburger>div::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+    #flex-items5 {
+        margin-left: 5px;
+    }
+    #flex-items0 {
+        width: 32px;
+        height: 32px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    #flex-items0 input[type="checkbox"] {
+        width: 33px;
+        height: 33px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        z-index: 2;
+        margin-left: 13px;
+    }
+}
+
+footer .flex-container0 {
+    border-top: 1px solid #788896;
+    border-bottom: 1px solid #788896;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: #c3cfd9;
+    padding: 10px;
+    padding-top: 100px;
+}
+
+/* making it flex to reduce complexity of social section and specific stages */
+
+footer .social {
+    border-top: 1px solid #788896;
+    border-bottom: 1px solid #788896;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: #c3cfd9;
+    padding: 10px;
+}
+
+/* maintaining a safe distance b/w icon.  */
+
+footer .social .social-icon {
+    margin-left: 40px;
+}
+
+/* setting image for instagram  */
+
+footer .social #instagram {
+    width: 33px;
+    height: 33px;
+    background-repeat: no-repeat;
+    background-image: url("../../src/icons/social/instagram.svg");
+}
+
+/* For twitter  */
+
+footer .social #twitter {
+    width: 33px;
+    height: 33px;
+    background-repeat: no-repeat;
+    background-image: url("../../src/icons/social/twitter.svg");
+}
+
+/* For facebook  */
+
+footer .social #facebook {
+    width: 33px;
+    height: 33px;
+    background-repeat: no-repeat;
+    background-image: url("../../src/icons/social/facebook.svg");
+}
+
+/* For github */
+
+footer .social #github {
+    width: 33px;
+    height: 33px;
+    background-repeat: no-repeat;
+    background-image: url("../../src/icons/social/github.svg");
+}
+
+/* For linkdin  */
+
+footer .social #linkdin {
+    width: 33px;
+    height: 33px;
+    background-repeat: no-repeat;
+    background-image: url("../../src/icons/social/linkedin.svg");
+}
+
+/* For mail  */
+
+footer .social #mail {
+    width: 33px;
+    height: 33px;
+    background-repeat: no-repeat;
+    background-image: url("../../src/icons/social/mail.svg");
+}
+
+/* defining some properties on anchor tags in footer */
+
+footer a {
+    color: black;
+    text-decoration: none;
+    padding: 3px;
+    margin: 2px 23px;
+}
+
+/* defining some properties on hover state of anchor tags of navigation bar  */
+
+footer a:hover {
+    font-size: 15px;
+    color: #80b8b2;
+}
+
+/* adding some padding at the top of copyright area.  */
+
+footer .flex-container {
+    padding-top: 103px;
+}
+
+/* adding some bottom margin and align at right */
+
+footer .flex-container0 .copyright {
+    margin-left: 500px;
+    margin-bottom: 10px;
+    font-size: 10px;
+}
+
+@media screen and (max-width:1309px) and (min-width:1158px) {
+    footer .flex-container0 .copyright {
+        margin-left: 350px;
+    }
+}
+
+@media screen and (max-width:978px) and (min-width:50px) {
+    footer .flex-container0 .copyright {
+        padding-top: 10px;
+        margin-left: 60px;
+    }
+}
+
+
+
+
+
+ 
+/* new css for hamburger  */
+
+
+
+
+
+:root {
+    --dark-background-color: #8dd7cf;
+    --light-background-color: #d1dfeb98;
+    --ot-color: #788896;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+}
+
+header {
+    background-color: var(--dark-background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+}
+
+header h2 {
+    color: #293845;
+    font-size: 2rem;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 3rem;
+}
+
+.showcase {
+    background-color: var(--dark-background-color);
+    color: #fff;
+    height: 100vh;
+    position: relative;
+}
+
+.showcase::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.showcase .showcase-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.showcase h1 {
+    font-size: 4rem;
+}
+
+.showcase p {
+    font-size: 1.3rem;
+}
+
+.btn {
+    display: inline;
+    border: none;
+    background-color: var(--dark-background-color);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    transition: opacity 1s ease-in;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+/* navigation bar alignment at normal width */
+
+.menu-wrap {
+    border-top: 2px solid #788896;
+    border-bottom: 2px solid #788896;
+    background-color: #c3cfd9;
+    padding: 10px;
+    padding-top: 0px;
+}
+
+.menu-wrap .toggler {
+    visibility: hidden;
+}
+
+.menu-wrap .menu>div>div>ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-wrap .menu>div>div>ul>li {
+    list-style: none;
+    padding-top: 3px;
+    padding-bottom: 6px;
+    padding-left: 60px;
+}
+
+.menu-wrap .menu>div>div>ul>li>a {
+    color: #43515e;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.menu-wrap #search {
+    border: 1px solid #b9c6d0;
+    border-radius: 7px;
+    position: absolute;
+    top: 224px;
+    right: 20px;
+}
+
+@media screen and (max-width:1250px) and (min-width:1180px) {
+    .menu-wrap .menu>div>div>ul>li {
+        padding-left: 50px;
+        transition: padding 0.9s ease;
+    }
+}
+
+@media screen and (max-width: 1182px) and (min-width:1135px) {
+    .menu-wrap .menu>div>div>ul>li {
+        padding-left: 48px;
+        transition: padding 0.9s ease;
+    }
+}
+
+@media screen and (max-width: 1136px) and (min-width:1093px) {
+    .menu-wrap .menu>div>div>ul>li {
+        padding-left: 46px;
+        transition: padding 0.9s ease;
+    }
+}
+
+@media screen and (max-width: 1095px) and (min-width:1053px) {
+    .menu-wrap .menu>div>div>ul>li {
+        padding-left: 44px;
+        transition: padding 0.9s ease;
+    }
+}
+
+@media screen and (max-width: 1055px) and (min-width:1011px) {
+    .menu-wrap .menu>div>div>ul>li {
+        padding-left: 42px;
+        transition: padding 0.9s ease;
+    }
+}
+
+@media screen and (max-width: 1015px) and (min-width:976px) {
+   .menu-wrap .menu>div>div>ul>li {
+        padding-left: 40px;
+        transition: padding 0.9s ease;
+    }
+}
+
+/* making hamburger menu at a specific screen width */
+
+@media screen and (max-width:978px) and (min-width:50px) {
+    /* started menu's css from here */
+    .menu-wrap {
+        background-color: #d1dfeb00;
+        border: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    .menu-wrap #search {
+        position: absolute;
+        top: 20px;
+        right: -638px;
+    }
+    .menu-wrap .toggler {
+        visibility: visible;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        opacity: 0;
+    }
+    .menu-wrap .toggler:checked+ .hamburger{
+        background-color: #d1dfeb00;
+    }
+    .menu-wrap .hamburger {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 60px;
+        height: 60px;
+        padding: 1rem;
+        background-color:#d1dfeb00;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu-wrap .hamburger>div {
+        position: relative;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s ease;
+    }
+    .menu-wrap .hamburger>div::before, .menu-wrap .hamburger>div::after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: -10px;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+    }
+    .menu-wrap .hamburger>div::after {
+        top: 10px;
+    }
+    .menu-wrap .toggler:checked+.hamburger>div {
+        transform: rotate(135deg);
+    }
+    .menu-wrap .toggler:checked+.hamburger>div::before, .menu-wrap .toggler:checked+.hamburger>div:after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+    .menu-wrap .toggler:checked:hover+.hamburger>div {
+        transform: rotate(225deg);
+    }
+    .menu-wrap .toggler:checked~.menu {
+        visibility: visible;
+    }
+    .menu-wrap .toggler:checked~.menu>div {
+        transform: scale(1);
+        transition-duration: 0.5s;
+    }
+    .menu-wrap .toggler:checked~.menu>div>div {
+        opacity: 1;
+        transition: opacity 0.4s ease;
+    }
+    .menu-wrap .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu-wrap .menu>div {
+        background-color: var(--light-background-color);
+        border-radius: 50%;
+        width: 200vw;
+        height: 200vw;
+        display: flex;
+        flex: none;
+        align-items: center;
+        justify-content: center;
+        transform: scale(0);
+        transition: all 0.4s ease;
+    }
+    .menu-wrap .menu>div>div {
+        text-align: center;
+        max-width: 90vw;
+        max-height: 100vh;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+    .menu-wrap .menu>div>div>ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-wrap .menu>div>div>ul>li {
+        list-style: none;
+        color: #fff;
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    .menu-wrap .menu>div>div>ul>li>a {
+        color: #43515e;
+        text-decoration: none;
+        transition: color 0.54s ease;
+    }
+}

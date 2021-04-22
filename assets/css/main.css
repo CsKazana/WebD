@@ -1,0 +1,385 @@
+/* DESIGNED & DEELOPED BY: CSKHAZANA */
+
+/* Importing font Playfair */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+/* initilizing margin padding and border-box for parent*/
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+main{
+    margin-bottom: 200px;
+}
+
+/* rules for topmost section  */
+
+#top {
+    margin: 20px 10px;
+    display: grid;
+    background-color: #ffffff;
+    grid-template-columns: 6fr 2fr;
+}
+
+/* some rule for popular-post section  */
+
+#top .popular-post {
+    margin: 10px 30px;
+    height: 600px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr 2.5fr;
+    grid-template-rows: 7% repeat(2, 30%) 5%;
+    column-gap: 5px;
+    row-gap: 20px;
+    grid-auto-rows: minmax(50px, 75px);
+    grid-auto-columns: minmax(50px, 75px);
+}
+
+/* some rule for h2 in popular post section  */
+
+#top .popular-post h2 {
+    text-align: center;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+/* aligned post-1 */
+
+#top .popular-post #post-1 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+/* aligned post-2 */
+
+#top .popular-post #post-2 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+/* aligned more button in popular-post section  */
+
+#top .popular-post .mr-popular-post {
+    text-align: center;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+/* rules for anchor */
+
+#top .popular-post .mr-popular-post a {
+    text-decoration: none;
+    color: #ffff;
+    padding: 5px;
+    background-color: #788896;
+    border: none;
+    border-radius: 3px;
+}
+
+/* rules for anchor tag at hover state */
+
+#top .popular-post .mr-popular-post a:hover {
+    background-color: #8dd7cf;
+}
+
+/* some rules for both posts  */
+
+#top .popular-post .posts {
+    background-color: #ffffff;
+    border: 2px solid #c3cfd9;
+    display: grid;
+    grid-template-columns: 1.74fr 2.9fr;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+/* some rules for images in posts  */
+
+#top .popular-post .posts .img {
+    text-align: center;
+    background-color: #dfe6ed;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+/* remove it when you add a real image  */
+
+#top .popular-post .posts .img img {
+    margin-top: 80px;
+}
+
+/* some rules for paragraph in posts section  */
+
+#top .popular-post .posts .para {
+    margin-top: 26px;
+    background-color: #ffffff;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+/* rules for instagram section  */
+
+#top .instagram {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: #ffffff;
+    border: 2px solid #c3cfd9;
+}
+
+/* some rules for h2 of instagram div  */
+
+#top .instagram h2 {
+    color: #8dd7cf;
+    font-size: medium;
+    text-align: center;
+}
+
+/* some rules for inner frame of instagram  */
+
+#top .instagram .instainner {
+    height: 556px;
+    border: 2px solid #c3cfd9;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* rules for first horizontal rule */
+
+#first {
+    color: #c3cfd9;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+.recent_post_top_frame {
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: 5% 2%;
+}
+
+.recent_post_top_frame h2{
+    text-align: center;
+}
+
+.recent_post_top_frame .slide_indicator{
+    margin-top: 7px;
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 506px;
+    height: 15px;
+    display: grid;
+    grid-template-columns: repeat(27,1fr);
+}
+.recent_post_top_frame .slide_indicator p{
+    background-color: black;
+    border-radius: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 10px;
+    height: 10px;
+}
+.recent_post_top_frame .slide_indicator #dot1{
+    grid-column-start: 13;
+    grid-column-end: 14;
+    margin-top: 3px;
+    width: 5px;
+    height: 5px;
+    border-radius: 15px;
+}
+.recent_post_top_frame .slide_indicator #dot2{
+    grid-column-start: 14;
+    grid-column-end: 15;
+}
+.recent_post_top_frame .slide_indicator #dot3{
+    grid-column-start: 15;
+    grid-column-end: 16;
+    margin-top: 3px;
+    width: 5px;
+    height: 5px;
+    border-radius: 15px;
+}
+/* some rule for popular-post section  */
+
+.recent_post_top_frame .recent-post {
+    border: 2px solid #c3cfd9;
+    padding: 10px;
+    margin: 10px 30px;
+    height: 232px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    column-gap: 0px;
+    /* grid-auto-columns: minmax(50px, 65px); */
+}
+
+/* aligned post-3 */
+
+.recent_post_top_frame .recent-post #post-3 {
+    margin-top: 16px;
+    overflow: hidden;
+    border-right: none;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+/* aligned post-4 */
+
+.recent_post_top_frame .recent-post #post-4 {
+    height: 195px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+/* aligned post-5 */
+
+.recent_post_top_frame .recent-post #post-5 {
+    margin-top: 16px;
+    overflow: hidden;
+    border-left: none;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+/* some rules for both posts  */
+
+.recent_post_top_frame .recent-post .posts {
+    height: 165px;
+    background-color: #ffffff;
+    border: 2px solid #c3cfd9;
+    display: grid;
+    grid-template-columns: 1.74fr 2.9fr;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+/* some rules for images in posts  */
+
+.recent_post_top_frame .recent-post .posts .img {
+    text-align: center;
+    background-color: #dfe6ed;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+/* remove it when you add a real image  */
+
+.recent_post_top_frame .recent-post .posts .img img {
+    margin-top: 80px;
+}
+
+/* some rules for paragraph in posts section  */
+
+.recent_post_top_frame .recent-post .posts .para {
+    margin-top: 26px;
+    background-color: #ffffff;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+
+/* some rule for popular-post section  */
+.recent_post_top_frame .recent-videos {
+    border: 2px solid #c3cfd9;
+    padding: 10px;
+    margin: 10px 30px;
+    height: 232px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    column-gap: 0px;
+}
+
+/* aligned post-3 */
+.recent_post_top_frame .recent-videos #post-3 {
+    margin-top: 16px;
+    background-color: #dfe6ed;
+    overflow: hidden;
+    border-right: none;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+/* aligned post-4 */
+.recent_post_top_frame .recent-videos #post-4 {
+    height: 195px;
+    background-color: #dfe6ed;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+/* aligned post-5 */
+.recent_post_top_frame .recent-videos #post-5 {
+    margin-top: 16px;
+    background-color: #dfe6ed;
+    overflow: hidden;
+    border-left: none;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+/* some rules for both posts  */
+.recent_post_top_frame .recent-videos .posts {
+    height: 165px;
+    background-color: #ffffff;
+    border: 2px solid #c3cfd9;
+    display: grid;
+    grid-template-columns: 1.74fr 2.9fr;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+.recent_post_top_frame .recent-videos #post-3 img{
+     margin-top: 75px;
+     margin-left: 171px;
+}
+.recent_post_top_frame .recent-videos #post-4 img{
+     margin-top: 87px;
+     margin-left: 235px;
+}
+.recent_post_top_frame .recent-videos #post-5 img{
+     margin-top: 75px;
+     margin-left: 171px;
+}
+input[type="button"] {
+    z-index: 1;
+    background-color: #ffffff00;
+    border: none;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    margin-top: 63px;
+    padding: 34px 0px;
+}
+
+input[type="button"]:hover {
+    background-color: #d3d5d893;
+    border-radius: 5px;
+}
+
+.arrows {
+    position: absolute;
+    margin-top: 85px;
+}
+
+#rightbtn, #arrows_right {
+    margin-left: 1246px;
+}

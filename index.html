@@ -12,39 +12,37 @@
     <link rel="icon" type="image/png" sizes="16x16" href="src/assets/icons/favicon//favicon-16x16.png">
     <link rel="manifest" href="src/assets/icons/favicon/site.webmanifest">
     <!-- Linked Style sheet for navigation bar and footer section -->
-    <link rel="stylesheet" href="src/assets/css/nav-footer.css">
+    <link rel="stylesheet" href="assets/css/nav-footer.css">
     <!-- Linked Style sheet for main section.  -->
-    <link rel="stylesheet" href="src/assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <title>CSKHAZANA | HOME</title>
 </head>
 
 <body>
     <!-- header  -->
     <header>
-        <h1>CSKHAZANA</h1>
+        <h2>CSKHAZANA</h2>
     </header>
-    <!-- Nav bar  -->
-    <nav class="flex-container">
-        <input type="checkbox" name="" id="toggler">
+    <!-- navigation  -->
+    <nav class="menu-wrap">
+        <input type="checkbox" class="toggler">
         <div class="hamburger">
             <div></div>
         </div>
-        <div class="flex-items" id="flex-items1">
-            <a href="#header">HOME</a>
+        <div class="menu">
+            <div>
+                <div>
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">HOW TO</a></li>
+                        <li><a href="#">VIDEOS</a></li>
+                        <li><a href="#">BEST DEALS</a></li>
+
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="flex-items" id="flex-items2">
-            <a href="src/assets/pages/HOW_TO.html">HOW TO</a>
-        </div>
-        <div class="flex-items" id="flex-items3">
-            <a href="src/assets/pages/Videos.html">VIDEOS</a>
-        </div>
-        <div class="flex-items" id="flex-items4">
-            <a href="src/assets/pages/BEST_DEALS.html">BEST DEALS</a>
-        </div>
-        <div class="flex-items" id="flex-items5">
-            <input type="submit" value="">
-            <input type="search" placeholder="SEARCH" name="search" id="search">
-        </div>
+        <input type="text" name="search" id="search" placeholder="Search">
     </nav>
     <!-- main  -->
     <main>
@@ -96,8 +94,10 @@
                     <div class="para">1Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex ipsum minus, impedit
                         dolorem tempore exercitationem Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
                 </div>
-                <input type="button" value="" id="leftbtn"><img src="src/assets/icons/utility/left_arrow.svg" id="arrows_left" class="arrows" alt=""></input>
-                <input type="button" value="" id="rightbtn"><img src="src/assets/icons/utility/right_arrow.svg" id="arrows_right" class="arrows" alt=""></input>
+                <input type="button" value="" id="leftbtn"><img src="src/assets/icons/utility/left_arrow.svg"
+                    id="arrows_left" class="arrows" alt=""></input>
+                <input type="button" value="" id="rightbtn"><img src="src/assets/icons/utility/right_arrow.svg"
+                    id="arrows_right" class="arrows" alt=""></input>
                 <div class="slide_indicator">
                     <p id="dot1"></p>
                     <p id="dot2"></p>
@@ -116,8 +116,10 @@
                 <div class="posts" id="post-5">
                     <img src="src/assets/images/play_circle_filled_black_24dp.svg" alt="">
                 </div>
-                <input type="button" value="" id="leftbtn"><img src="src/assets/icons/utility/left_arrow.svg" id="arrows_left" class="arrows" alt=""></input>
-                <input type="button" value="" id="rightbtn"><img src="src/assets/icons/utility/right_arrow.svg" id="arrows_right" class="arrows" alt=""></input>
+                <input type="button" value="" id="leftbtn"><img src="src/assets/icons/utility/left_arrow.svg"
+                    id="arrows_left" class="arrows" alt=""></input>
+                <input type="button" value="" id="rightbtn"><img src="src/assets/icons/utility/right_arrow.svg"
+                    id="arrows_right" class="arrows" alt=""></input>
                 <div class="slide_indicator">
                     <p id="dot1"></p>
                     <p id="dot2"></p>
@@ -144,7 +146,6 @@
             <div class="copyright">&copy;DESIGNED & DEVELOPED BY CSKHAZANA</div>
         </div>
     </footer>
-
 </body>
 
 </html>

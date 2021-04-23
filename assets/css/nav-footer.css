@@ -67,7 +67,6 @@ nav input[type="submit"] {
     margin-right: -5px;
     border-right: none;
     background-color: #ffffff;
-    background-image: url("../icons/utility/search.svg");
     background-repeat: no-repeat;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -264,7 +263,7 @@ footer .social #instagram {
     width: 33px;
     height: 33px;
     background-repeat: no-repeat;
-    background-image: url("../icons/social/instagram.svg");
+    background-image: url("../../src/icons/social/instagram.svg");
 }
 
 /* For twitter  */
@@ -273,7 +272,7 @@ footer .social #twitter {
     width: 33px;
     height: 33px;
     background-repeat: no-repeat;
-    background-image: url("../icons/social/twitter.svg");
+    background-image: url("../../src/icons/social/twitter.svg");
 }
 
 /* For facebook  */
@@ -282,7 +281,7 @@ footer .social #facebook {
     width: 33px;
     height: 33px;
     background-repeat: no-repeat;
-    background-image: url("../icons/social/facebook.svg");
+    background-image: url("../../src/icons/social/facebook.svg");
 }
 
 /* For github */
@@ -291,7 +290,7 @@ footer .social #github {
     width: 33px;
     height: 33px;
     background-repeat: no-repeat;
-    background-image: url("../icons/social/github.svg");
+    background-image: url("../../src/icons/social/github.svg");
 }
 
 /* For linkdin  */
@@ -300,7 +299,7 @@ footer .social #linkdin {
     width: 33px;
     height: 33px;
     background-repeat: no-repeat;
-    background-image: url("../icons/social/linkedin.svg");
+    background-image: url("../../src/icons/social/linkedin.svg");
 }
 
 /* For mail  */
@@ -309,7 +308,7 @@ footer .social #mail {
     width: 33px;
     height: 33px;
     background-repeat: no-repeat;
-    background-image: url("../icons/social/mail.svg");
+    background-image: url("../../src/icons/social/mail.svg");
 }
 
 /* defining some properties on anchor tags in footer */
